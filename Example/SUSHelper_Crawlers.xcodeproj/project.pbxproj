@@ -7,62 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		72079BB284688FE0E73BA4DF /* Pods_SUSHelper_Crawlers_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D43D97F1149108B7DA31F0F /* Pods_SUSHelper_Crawlers_Example.framework */; };
-		D7D07949F750ED708E44BC3D /* Pods_SUSHelper_Crawlers_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25E57D21BE6C0388EBA38B6 /* Pods_SUSHelper_Crawlers_Tests.framework */; };
+		8AE2B81A1F58013A00BE7ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2B8191F58013A00BE7ABA /* AppDelegate.swift */; };
+		8AE2B81C1F58013A00BE7ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2B81B1F58013A00BE7ABA /* ViewController.swift */; };
+		8AE2B81E1F58013A00BE7ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE2B81D1F58013A00BE7ABA /* Assets.xcassets */; };
+		8AE2B8211F58013A00BE7ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE2B81F1F58013A00BE7ABA /* Main.storyboard */; };
+		91B75653C13F5833D0DC1FB5 /* Pods_SUSHelper_Crawlers_Mac_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D013A3FB4E14D35A3C49D1B /* Pods_SUSHelper_Crawlers_Mac_Demo.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = SUSHelper_Crawlers;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1E408F5E2CAC99A909151FEE /* Pods-SUSHelper_Crawlers_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUSHelper_Crawlers_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SUSHelper_Crawlers_Tests/Pods-SUSHelper_Crawlers_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D43D97F1149108B7DA31F0F /* Pods_SUSHelper_Crawlers_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUSHelper_Crawlers_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B04A9E738658BC86AC6AF95 /* Pods-SUSHelper_Crawlers_Mac_Ex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUSHelper_Crawlers_Mac_Ex.release.xcconfig"; path = "Pods/Target Support Files/Pods-SUSHelper_Crawlers_Mac_Ex/Pods-SUSHelper_Crawlers_Mac_Ex.release.xcconfig"; sourceTree = "<group>"; };
 		3AEEF5D966C3056F72D7EC2C /* Pods-SUSHelper_Crawlers_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUSHelper_Crawlers_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SUSHelper_Crawlers_Tests/Pods-SUSHelper_Crawlers_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* SUSHelper_Crawlers_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUSHelper_Crawlers_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* SUSHelper_Crawlers_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SUSHelper_Crawlers_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		8AE2B8171F58013A00BE7ABA /* SUSHelper_Crawlers_Mac_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUSHelper_Crawlers_Mac_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE2B8191F58013A00BE7ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AE2B81B1F58013A00BE7ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AE2B81D1F58013A00BE7ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AE2B8201F58013A00BE7ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AE2B8221F58013A00BE7ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D013A3FB4E14D35A3C49D1B /* Pods_SUSHelper_Crawlers_Mac_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUSHelper_Crawlers_Mac_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9225457D72FBF65553838604 /* Pods-SUSHelper_Crawlers_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUSHelper_Crawlers_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SUSHelper_Crawlers_Example/Pods-SUSHelper_Crawlers_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AA20293627AD2A44FC143371 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AA20293627AD2A44FC143371 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B549DCF8C651C638BA17DDE5 /* Pods-SUSHelper_Crawlers_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUSHelper_Crawlers_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SUSHelper_Crawlers_Example/Pods-SUSHelper_Crawlers_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B5A337BC06CC04458147998B /* SUSHelper_Crawlers.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SUSHelper_Crawlers.podspec; path = ../SUSHelper_Crawlers.podspec; sourceTree = "<group>"; };
-		EC0B0A0592C73301D671CDD8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F25E57D21BE6C0388EBA38B6 /* Pods_SUSHelper_Crawlers_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUSHelper_Crawlers_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A337BC06CC04458147998B /* SUSHelper_Crawlers.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SUSHelper_Crawlers.podspec; path = ../SUSHelper_Crawlers.podspec; sourceTree = "<group>"; };
+		CBC746FBD45008A4C466EBC3 /* Pods-SUSHelper_Crawlers_Mac_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUSHelper_Crawlers_Mac_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SUSHelper_Crawlers_Mac_Demo/Pods-SUSHelper_Crawlers_Mac_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		E9A1A139E2A077A9FD87B611 /* Pods-SUSHelper_Crawlers_Mac_Ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUSHelper_Crawlers_Mac_Ex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SUSHelper_Crawlers_Mac_Ex/Pods-SUSHelper_Crawlers_Mac_Ex.debug.xcconfig"; sourceTree = "<group>"; };
+		EC0B0A0592C73301D671CDD8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FB5190BB1C6C1F7AF03B375C /* Pods-SUSHelper_Crawlers_Mac_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUSHelper_Crawlers_Mac_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SUSHelper_Crawlers_Mac_Demo/Pods-SUSHelper_Crawlers_Mac_Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+		8AE2B8141F58013A00BE7ABA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72079BB284688FE0E73BA4DF /* Pods_SUSHelper_Crawlers_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D7D07949F750ED708E44BC3D /* Pods_SUSHelper_Crawlers_Tests.framework in Frameworks */,
+				91B75653C13F5833D0DC1FB5 /* Pods_SUSHelper_Crawlers_Mac_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for SUSHelper_Crawlers */,
-				607FACE81AFB9204008FA782 /* Tests */,
+				8AE2B8181F58013A00BE7ABA /* SUSHelper_Crawlers_Mac_Demo */,
 				607FACD11AFB9204008FA782 /* Products */,
 				E482FA7A78578A6072A87448 /* Pods */,
 				C96E66E72EF5076800F0B102 /* Frameworks */,
@@ -84,49 +61,9 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* SUSHelper_Crawlers_Example.app */,
-				607FACE51AFB9204008FA782 /* SUSHelper_Crawlers_Tests.xctest */,
+				8AE2B8171F58013A00BE7ABA /* SUSHelper_Crawlers_Mac_Demo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		607FACD21AFB9204008FA782 /* Example for SUSHelper_Crawlers */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
-			);
-			name = "Example for SUSHelper_Crawlers";
-			path = SUSHelper_Crawlers;
-			sourceTree = "<group>";
-		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
@@ -139,11 +76,22 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		8AE2B8181F58013A00BE7ABA /* SUSHelper_Crawlers_Mac_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8AE2B8191F58013A00BE7ABA /* AppDelegate.swift */,
+				8AE2B81B1F58013A00BE7ABA /* ViewController.swift */,
+				8AE2B81D1F58013A00BE7ABA /* Assets.xcassets */,
+				8AE2B81F1F58013A00BE7ABA /* Main.storyboard */,
+				8AE2B8221F58013A00BE7ABA /* Info.plist */,
+			);
+			path = SUSHelper_Crawlers_Mac_Demo;
+			sourceTree = "<group>";
+		};
 		C96E66E72EF5076800F0B102 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2D43D97F1149108B7DA31F0F /* Pods_SUSHelper_Crawlers_Example.framework */,
-				F25E57D21BE6C0388EBA38B6 /* Pods_SUSHelper_Crawlers_Tests.framework */,
+				8D013A3FB4E14D35A3C49D1B /* Pods_SUSHelper_Crawlers_Mac_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +103,10 @@
 				9225457D72FBF65553838604 /* Pods-SUSHelper_Crawlers_Example.release.xcconfig */,
 				1E408F5E2CAC99A909151FEE /* Pods-SUSHelper_Crawlers_Tests.debug.xcconfig */,
 				3AEEF5D966C3056F72D7EC2C /* Pods-SUSHelper_Crawlers_Tests.release.xcconfig */,
+				E9A1A139E2A077A9FD87B611 /* Pods-SUSHelper_Crawlers_Mac_Ex.debug.xcconfig */,
+				2B04A9E738658BC86AC6AF95 /* Pods-SUSHelper_Crawlers_Mac_Ex.release.xcconfig */,
+				CBC746FBD45008A4C466EBC3 /* Pods-SUSHelper_Crawlers_Mac_Demo.debug.xcconfig */,
+				FB5190BB1C6C1F7AF03B375C /* Pods-SUSHelper_Crawlers_Mac_Demo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -162,46 +114,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* SUSHelper_Crawlers_Example */ = {
+		8AE2B8161F58013A00BE7ABA /* SUSHelper_Crawlers_Mac_Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SUSHelper_Crawlers_Example" */;
+			buildConfigurationList = 8AE2B8231F58013A00BE7ABA /* Build configuration list for PBXNativeTarget "SUSHelper_Crawlers_Mac_Demo" */;
 			buildPhases = (
-				58F17F8E21A7C6F7801CF752 /* [CP] Check Pods Manifest.lock */,
-				607FACCC1AFB9204008FA782 /* Sources */,
-				607FACCD1AFB9204008FA782 /* Frameworks */,
-				607FACCE1AFB9204008FA782 /* Resources */,
-				E0F56DDFB151745D649AD759 /* [CP] Embed Pods Frameworks */,
-				B92C07029FF7002FE7F6A4E2 /* [CP] Copy Pods Resources */,
+				C6EE6E997D02408B681E2137 /* [CP] Check Pods Manifest.lock */,
+				8AE2B8131F58013A00BE7ABA /* Sources */,
+				8AE2B8141F58013A00BE7ABA /* Frameworks */,
+				8AE2B8151F58013A00BE7ABA /* Resources */,
+				DC556897849BF0D24815C04D /* [CP] Embed Pods Frameworks */,
+				5771993C9A2FBCF11B1AA202 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SUSHelper_Crawlers_Example;
-			productName = SUSHelper_Crawlers;
-			productReference = 607FACD01AFB9204008FA782 /* SUSHelper_Crawlers_Example.app */;
+			name = SUSHelper_Crawlers_Mac_Demo;
+			productName = SUSHelper_Crawlers_Mac_Demo;
+			productReference = 8AE2B8171F58013A00BE7ABA /* SUSHelper_Crawlers_Mac_Demo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		607FACE41AFB9204008FA782 /* SUSHelper_Crawlers_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SUSHelper_Crawlers_Tests" */;
-			buildPhases = (
-				DBF3AD7FD3AED65FE8D9EA88 /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				B3C34C0951AC4238A6A542E6 /* [CP] Embed Pods Frameworks */,
-				1CB965053DD37D4EB61A187C /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
-			);
-			name = SUSHelper_Crawlers_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* SUSHelper_Crawlers_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -209,18 +140,13 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+					8AE2B8161F58013A00BE7ABA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -237,34 +163,25 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* SUSHelper_Crawlers_Example */,
-				607FACE41AFB9204008FA782 /* SUSHelper_Crawlers_Tests */,
+				8AE2B8161F58013A00BE7ABA /* SUSHelper_Crawlers_Mac_Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACCE1AFB9204008FA782 /* Resources */ = {
+		8AE2B8151F58013A00BE7ABA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8AE2B81E1F58013A00BE7ABA /* Assets.xcassets in Resources */,
+				8AE2B8211F58013A00BE7ABA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1CB965053DD37D4EB61A187C /* [CP] Copy Pods Resources */ = {
+		5771993C9A2FBCF11B1AA202 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,10 +193,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SUSHelper_Crawlers_Tests/Pods-SUSHelper_Crawlers_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SUSHelper_Crawlers_Mac_Demo/Pods-SUSHelper_Crawlers_Mac_Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		58F17F8E21A7C6F7801CF752 /* [CP] Check Pods Manifest.lock */ = {
+		C6EE6E997D02408B681E2137 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,7 +211,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B3C34C0951AC4238A6A542E6 /* [CP] Embed Pods Frameworks */ = {
+		DC556897849BF0D24815C04D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,99 +223,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SUSHelper_Crawlers_Tests/Pods-SUSHelper_Crawlers_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B92C07029FF7002FE7F6A4E2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SUSHelper_Crawlers_Example/Pods-SUSHelper_Crawlers_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DBF3AD7FD3AED65FE8D9EA88 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E0F56DDFB151745D649AD759 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SUSHelper_Crawlers_Example/Pods-SUSHelper_Crawlers_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SUSHelper_Crawlers_Mac_Demo/Pods-SUSHelper_Crawlers_Mac_Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		607FACCC1AFB9204008FA782 /* Sources */ = {
+		8AE2B8131F58013A00BE7ABA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				8AE2B81C1F58013A00BE7ABA /* ViewController.swift in Sources */,
+				8AE2B81A1F58013A00BE7ABA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* SUSHelper_Crawlers_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+		8AE2B81F1F58013A00BE7ABA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
+				8AE2B8201F58013A00BE7ABA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -491,66 +339,44 @@
 			};
 			name = Release;
 		};
-		607FACF01AFB9204008FA782 /* Debug */ = {
+		8AE2B8241F58013A00BE7ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B549DCF8C651C638BA17DDE5 /* Pods-SUSHelper_Crawlers_Example.debug.xcconfig */;
+			baseConfigurationReference = CBC746FBD45008A4C466EBC3 /* Pods-SUSHelper_Crawlers_Mac_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SUSHelper_Crawlers/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = SUSHelper_Crawlers_Mac_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "xieyi.SUSHelper-Crawlers-Mac-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		607FACF11AFB9204008FA782 /* Release */ = {
+		8AE2B8251F58013A00BE7ABA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9225457D72FBF65553838604 /* Pods-SUSHelper_Crawlers_Example.release.xcconfig */;
+			baseConfigurationReference = FB5190BB1C6C1F7AF03B375C /* Pods-SUSHelper_Crawlers_Mac_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SUSHelper_Crawlers/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SUSHelper_Crawlers_Mac_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "xieyi.SUSHelper-Crawlers-Mac-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E408F5E2CAC99A909151FEE /* Pods-SUSHelper_Crawlers_Tests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AEEF5D966C3056F72D7EC2C /* Pods-SUSHelper_Crawlers_Tests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -567,23 +393,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SUSHelper_Crawlers_Example" */ = {
+		8AE2B8231F58013A00BE7ABA /* Build configuration list for PBXNativeTarget "SUSHelper_Crawlers_Mac_Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF01AFB9204008FA782 /* Debug */,
-				607FACF11AFB9204008FA782 /* Release */,
+				8AE2B8241F58013A00BE7ABA /* Debug */,
+				8AE2B8251F58013A00BE7ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SUSHelper_Crawlers_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

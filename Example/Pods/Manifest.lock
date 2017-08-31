@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.5.0)
+  - Kanna (2.2.1)
+  - SUSHelper_Crawlers (0.1.0):
+    - Alamofire
+    - Kanna
+    - SwiftyJSON
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - SUSHelper_Crawlers (from `../`)
+
+EXTERNAL SOURCES:
+  SUSHelper_Crawlers:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Kanna: 182789ab065e8f9a6ccc2a74ce6283d3401c0c4a
+  SUSHelper_Crawlers: 144fcbaadd4d24a825b3cf1c50bf21c6d923e616
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: ed620b00ed2db3ac0ea4a68053e4e657d475e72b
+
+COCOAPODS: 1.2.1

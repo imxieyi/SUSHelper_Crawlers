@@ -1,0 +1,6 @@
+framework module SUSHelper_Crawlers {
+  umbrella header "SUSHelper_Crawlers-umbrella.h"
+
+  export *
+  module * { export * }
+}

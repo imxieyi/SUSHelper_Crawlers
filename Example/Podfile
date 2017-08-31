@@ -1,11 +1,5 @@
 use_frameworks!
 
-target 'SUSHelper_Crawlers_Example' do
-  pod 'SUSHelper_Crawlers', :path => '../'
-
-  target 'SUSHelper_Crawlers_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'SUSHelper_Crawlers_Mac_Demo' do
+    pod 'SUSHelper_Crawlers', :path => '../'
 end

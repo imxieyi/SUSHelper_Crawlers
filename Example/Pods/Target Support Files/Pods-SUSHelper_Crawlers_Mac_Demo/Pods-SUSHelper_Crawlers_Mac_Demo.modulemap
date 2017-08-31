@@ -1,0 +1,6 @@
+framework module Pods_SUSHelper_Crawlers_Mac_Demo {
+  umbrella header "Pods-SUSHelper_Crawlers_Mac_Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

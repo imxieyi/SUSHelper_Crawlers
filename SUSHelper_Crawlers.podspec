@@ -28,9 +28,12 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Xie Yi/SUSHelper_Crawlers.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.osx.deployment_target = '10.10'
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SUSHelper_Crawlers/Classes/**/*'
+
+  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2" }
   
   # s.resource_bundles = {
   #   'SUSHelper_Crawlers' => ['SUSHelper_Crawlers/Assets/*.png']
@@ -38,5 +41,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Alamofire'
+  s.dependency 'Kanna'
+  s.dependency 'SwiftyJSON'
 end
