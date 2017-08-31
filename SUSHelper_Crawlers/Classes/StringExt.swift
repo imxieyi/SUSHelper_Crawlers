@@ -8,9 +8,14 @@
 
 import Foundation
 
+// MARK: - Some useful string functions
 extension String {
     
     //Reference: https://stackoverflow.com/questions/43383835/remove-the-first-six-characters-from-a-string-swift
+    /// Remove from the beginning of the string
+    ///
+    /// - Parameter length: Length of chars to remove
+    /// - Returns: The result string
     func removeFirst(_ length: Int) -> String {
         if length <= 0 {
             return self
@@ -23,6 +28,10 @@ extension String {
     }
     
     //Reference: https://stackoverflow.com/questions/29421726/swift-how-to-get-the-string-before-a-certain-character
+    /// Substring before a given pivot
+    ///
+    /// - Parameter what: Pivot string
+    /// - Returns: The result string
     func subStringBefore(_ what: String) -> String {
         if let range = self.range(of: what) {
             let firstPart = self[self.startIndex..<range.lowerBound]
@@ -32,6 +41,10 @@ extension String {
         }
     }
     
+    /// Substring after a given pivot
+    ///
+    /// - Parameter what: Pivot string
+    /// - Returns: The result string
     func subStringAfter(_ what: String) -> String {
         if let range = self.range(of: what) {
             let lastPart = self[range.upperBound..<self.endIndex]
@@ -42,6 +55,12 @@ extension String {
     }
     
     //Reference: https://stackoverflow.com/questions/31725424/swift-get-string-between-2-strings-in-a-string
+    /// Remove string between two given pivots
+    ///
+    /// - Parameters:
+    ///   - from: The left pivot
+    ///   - to: The right pivot
+    /// - Returns: The result string
     func removeBetween(_ from: String, _ to: String) -> String {
         var temp = self
         while true {

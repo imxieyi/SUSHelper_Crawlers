@@ -24,15 +24,20 @@ let pms_session_request_body = "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:
 let pms_private_login_body_format = "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><soap:Body><Login xmlns=\"http://tempuri.org/\"><bstrSessionID>%@</bstrSessionID><bstrUserName>%@</bstrUserName><bstrPassword>%@</bstrPassword></Login></soap:Body></soap:Envelope>"
 
 var pms_session = ""
+fileprivate var pms_account = ""
 
 let pms_test_public_login_url = "http://pms.sustc.edu.cn/Service.asmx/GetDevices"
 
-class PrintSession {
+/// Login Unifound print management system
+open class PrintSession {
 
     static let headers: HTTPHeaders = [
         ://"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
     ]
     
+    /// Get a session number
+    ///
+    /// - Parameter callback: Async callback
     static func pms_public_login(_ callback: @escaping (String) -> Void) {
         var query_headers = headers
         query_headers["SOAPAction"] = "\"http://tempuri.org/InitSession\""
@@ -65,6 +70,12 @@ class PrintSession {
         MyAlamofire.requests.append(request)
     }
     
+    /// Login with username and password
+    ///
+    /// - Parameters:
+    ///   - username: Unifound account
+    ///   - password: Unifound password
+    ///   - callback: Async callback
     static func pms_private_login(_ username: String, _ password: String, _ callback: @escaping (String) -> Void) {
         debugPrint("Logging in pms with username \(username)")
         let body = String(format: pms_private_login_body_format, pms_session, username, password)
@@ -101,6 +112,9 @@ class PrintSession {
         MyAlamofire.requests.append(request)
     }
     
+    /// Test if this private session is already logged in
+    ///
+    /// - Parameter callback: Async callback
     static func pms_test_private_session(_ callback: @escaping (String) -> Void) {
         let body = "{\"bstrSessionID\": \"\(pms_session)\"}"
         var check_headers = headers
@@ -132,7 +146,16 @@ class PrintSession {
         MyAlamofire.requests.append(request)
     }
     
-    static func pms_login(_ username: String, _ password: String, _ callback: @escaping (String) -> Void) {
+    /// Auto detect login status and then login
+    ///
+    /// - Parameters:
+    ///   - username: Unifound print account
+    ///   - password: Unifound print password
+    ///   - callback: Async callback
+    open static func pms_login(_ username: String, _ password: String, _ callback: @escaping (String) -> Void) {
+        if pms_account != username {
+            pms_session = ""
+        }
         //Maybe logged in?
         if pms_session != "" {
             let requestjson = "{\"bstrSessionID\": \"\(pms_session)\"}"
@@ -173,6 +196,9 @@ class PrintSession {
                                             if ret == "success" {
                                                 pms_private_login(username, password) { ret in
                                                     callback(ret)
+                                                    if ret == "success" {
+                                                        pms_account = username
+                                                    }
                                                 }
                                             } else {
                                                 callback(ret)
@@ -202,6 +228,9 @@ class PrintSession {
                 if ret == "success" {
                     pms_private_login(username, password) { ret in
                         callback(ret)
+                        if ret == "success" {
+                            pms_account = username
+                        }
                     }
                 } else {
                     callback(ret)

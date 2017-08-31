@@ -11,13 +11,21 @@ import Alamofire
 import SwiftyJSON
 import Kanna
 
-class PrintJobs {
+/// Actions of existing print jobs
+open class PrintJobs {
     
+    /// Custom headers of all requests
     static let headers: HTTPHeaders = [
         ://"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
     ]
     
-    static func query(_ username: String, _ password: String, _ callback: @escaping (String, [PrintJob]) -> Void) {
+    /// Login and query all print jobs
+    ///
+    /// - Parameters:
+    ///   - username: Unifound account
+    ///   - password: Unifound password
+    ///   - callback: Async callback
+    open static func query(_ username: String, _ password: String, _ callback: @escaping (String, [PrintJob]) -> Void) {
         PrintSession.pms_login(username, password) { ret in
             if ret == "success" {
                 query_main(callback)
@@ -27,7 +35,14 @@ class PrintJobs {
         }
     }
     
-    static func delete(_ username: String, _ password: String, id: Int, _ callback: @escaping (String) -> Void) {
+    /// Delete print job of a given job id
+    ///
+    /// - Parameters:
+    ///   - username: Unifound account
+    ///   - password: Unifound password
+    ///   - id: Job id
+    ///   - callback: Async callback
+    open static func delete(_ username: String, _ password: String, id: Int, _ callback: @escaping (String) -> Void) {
         PrintSession.pms_login(username, password) { ret in
             if ret == "success" {
                 let json = "{\"bstrSessionID\": \"\(pms_session)\",\"bstrOP\":\"DEL\",\"bstrJobID\":\"\(id)\"}"
@@ -65,6 +80,9 @@ class PrintJobs {
         }
     }
     
+    /// Main procedure of query method
+    ///
+    /// - Parameter callback: Async callback (hell)
     private static func query_main(_ callback: @escaping (String, [PrintJob]) -> Void) {
         var query_headers = headers
         query_headers["Content-Type"] = "application/json"
@@ -134,17 +152,21 @@ class PrintJobs {
     
 }
 
-class PrintJob {
+/// Describe a single print job
+open class PrintJob {
     
-    let id: Int
-    let pages: Int
-    let copies: Int
-    let property: String
-    let form: String
-    let time: String
-    let name: String
+    /// The job id which can be used to delete the job
+    open let id: Int
+    open let pages: Int
+    open let copies: Int
+    /// Color/BlackWhite
+    open let property: String
+    /// Paper type
+    open let form: String
+    open let time: String
+    open let name: String
     
-    init(id: Int, pages: Int, copies: Int, property: String, form: String, time: String, name: String) {
+    public init(id: Int, pages: Int, copies: Int, property: String, form: String, time: String, name: String) {
         self.id = id
         self.pages = pages
         self.copies = copies

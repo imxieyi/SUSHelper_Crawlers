@@ -90,13 +90,105 @@
             <objects>
                 <viewController title="SUSHelper Crawlers Demo" id="XfG-lQ-9wD" customClass="ViewController" customModule="SUSHelper_Crawlers_Mac_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="853" height="492"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-FX-KNW">
+                                <rect key="frame" x="20" y="461" width="122" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="MFx-nU-Ljk"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Account" drawsBackground="YES" id="wWb-QU-8Wu">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <secureTextField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgk-j0-d8v">
+                                <rect key="frame" x="182" y="461" width="110" height="22"/>
+                                <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Password" drawsBackground="YES" usesSingleLineMode="YES" id="gb7-wp-h1E">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </secureTextFieldCell>
+                            </secureTextField>
+                            <comboBox verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nug-LB-IJ0">
+                                <rect key="frame" x="332" y="458" width="122" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="TfR-tt-OQ0"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Get Grades" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="tdw-0F-i04">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>Get Grades</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                            </comboBox>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uf2-1l-UJA">
+                                <rect key="frame" x="485" y="455" width="64" height="32"/>
+                                <buttonCell key="cell" type="push" title="Run" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0PR-xw-zLC">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="runpressed:" target="XfG-lQ-9wD" id="Cg9-U5-btf"/>
+                                </connections>
+                            </button>
+                            <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGh-bf-1Wi">
+                                <rect key="frame" x="0.0" y="0.0" width="853" height="453"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" ambiguous="YES" id="kjY-o8-Ms8">
+                                    <rect key="frame" x="1" y="1" width="851" height="451"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="GD6-st-TC2">
+                                            <rect key="frame" x="0.0" y="0.0" width="851" height="451"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="851" height="451"/>
+                                            <size key="maxSize" width="851" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="d4T-fe-UO7">
+                                    <rect key="frame" x="1" y="437" width="836" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="nIm-jr-aGe">
+                                    <rect key="frame" x="837" y="1" width="15" height="436"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nug-LB-IJ0" firstAttribute="leading" secondItem="Lgk-j0-d8v" secondAttribute="trailing" constant="40" id="Apx-wr-fAb"/>
+                            <constraint firstItem="nug-LB-IJ0" firstAttribute="centerY" secondItem="Cek-FX-KNW" secondAttribute="centerY" id="EXm-PU-gsx"/>
+                            <constraint firstItem="Lgk-j0-d8v" firstAttribute="leading" secondItem="Cek-FX-KNW" secondAttribute="trailing" constant="40" id="Hgj-A2-yg5"/>
+                            <constraint firstItem="nug-LB-IJ0" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="Oil-a9-Be5"/>
+                            <constraint firstItem="uf2-1l-UJA" firstAttribute="leading" secondItem="nug-LB-IJ0" secondAttribute="trailing" constant="40" id="Zdq-4e-pNZ"/>
+                            <constraint firstItem="nug-LB-IJ0" firstAttribute="centerY" secondItem="Lgk-j0-d8v" secondAttribute="centerY" id="eau-go-Ao0"/>
+                            <constraint firstItem="nug-LB-IJ0" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="332" id="mfo-J8-wdD"/>
+                            <constraint firstItem="Cek-FX-KNW" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="rJR-ec-6Ys"/>
+                            <constraint firstItem="nug-LB-IJ0" firstAttribute="bottom" secondItem="uf2-1l-UJA" secondAttribute="bottom" id="tGN-jW-NQ6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="account" destination="Cek-FX-KNW" id="T8U-Uu-Ef9"/>
+                        <outlet property="funcselect" destination="nug-LB-IJ0" id="WJh-vN-4I1"/>
+                        <outlet property="password" destination="Lgk-j0-d8v" id="3Nb-DJ-Yhq"/>
+                        <outlet property="textview" destination="GD6-st-TC2" id="oA8-y0-0fv"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="705"/>
+            <point key="canvasLocation" x="139.5" y="762"/>
         </scene>
     </scenes>
 </document>

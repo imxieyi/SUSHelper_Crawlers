@@ -11,13 +11,17 @@ import Alamofire
 import SwiftyJSON
 import Kanna
 
-class PrintStations {
+/// Query print stations
+open class PrintStations {
     
     static let headers: HTTPHeaders = [
         ://"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
     ]
     
-    static func query(_ callback: @escaping (String, [PrintStation]) -> Void) {
+    /// Get session number and query all print stations
+    ///
+    /// - Parameter callback: Async callback
+    open static func query(_ callback: @escaping (String, [PrintStation]) -> Void) {
         PrintSession.pms_public_login { ret in
             if ret == "success" {
                 query_main(callback)
@@ -27,6 +31,9 @@ class PrintStations {
         }
     }
     
+    /// Main query method
+    ///
+    /// - Parameter callback: Async callback
     private static func query_main(_ callback: @escaping (String, [PrintStation]) -> Void) {
         var query_headers = headers
         query_headers["Content-Type"] = "application/json"
@@ -94,16 +101,27 @@ class PrintStations {
     
 }
 
-class PrintStation {
+/// Describe a print station
+open class PrintStation {
     
-    let status: Int
-    let property: String
-    let strstatus: String
-    let form: String
-    let name: String
-    let statinfo: String
+    /// Status number.
+    /// Generally 0 means "operational".
+    /// However I don't know how many codes are valid.
+    /// Do not trust it before you have made clear what each code stands for.
+    open let status: Int
+    /// Print/Copy/Scan
+    open let property: String
+    /// Status description.
+    /// Easier to understand but harder to parse.
+    open let strstatus: String
+    /// A4/A3 etc.
+    open let form: String
+    /// Always include Color/BlackWhite and location.
+    open let name: String
+    /// Additional status info
+    open let statinfo: String
     
-    init(status: Int, property: String, strstatus: String, form: String, name: String, statinfo: String) {
+    public init(status: Int, property: String, strstatus: String, form: String, name: String, statinfo: String) {
         self.status = status
         self.property = property
         self.strstatus = strstatus

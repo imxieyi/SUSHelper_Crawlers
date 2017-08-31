@@ -11,6 +11,7 @@
 		8AE2B81C1F58013A00BE7ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2B81B1F58013A00BE7ABA /* ViewController.swift */; };
 		8AE2B81E1F58013A00BE7ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE2B81D1F58013A00BE7ABA /* Assets.xcassets */; };
 		8AE2B8211F58013A00BE7ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE2B81F1F58013A00BE7ABA /* Main.storyboard */; };
+		8AE2B82C1F58127D00BE7ABA /* GradeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2B82B1F58127D00BE7ABA /* GradeLoader.swift */; };
 		91B75653C13F5833D0DC1FB5 /* Pods_SUSHelper_Crawlers_Mac_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D013A3FB4E14D35A3C49D1B /* Pods_SUSHelper_Crawlers_Mac_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		8AE2B81D1F58013A00BE7ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AE2B8201F58013A00BE7ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AE2B8221F58013A00BE7ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AE2B82B1F58127D00BE7ABA /* GradeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeLoader.swift; sourceTree = "<group>"; };
 		8D013A3FB4E14D35A3C49D1B /* Pods_SUSHelper_Crawlers_Mac_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUSHelper_Crawlers_Mac_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9225457D72FBF65553838604 /* Pods-SUSHelper_Crawlers_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUSHelper_Crawlers_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SUSHelper_Crawlers_Example/Pods-SUSHelper_Crawlers_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AA20293627AD2A44FC143371 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				8AE2B81D1F58013A00BE7ABA /* Assets.xcassets */,
 				8AE2B81F1F58013A00BE7ABA /* Main.storyboard */,
 				8AE2B8221F58013A00BE7ABA /* Info.plist */,
+				8AE2B82B1F58127D00BE7ABA /* GradeLoader.swift */,
 			);
 			path = SUSHelper_Crawlers_Mac_Demo;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				8AE2B81C1F58013A00BE7ABA /* ViewController.swift in Sources */,
 				8AE2B81A1F58013A00BE7ABA /* AppDelegate.swift in Sources */,
+				8AE2B82C1F58127D00BE7ABA /* GradeLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +404,7 @@
 				8AE2B8251F58013A00BE7ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,4 +2,5 @@ use_frameworks!
 
 target 'SUSHelper_Crawlers_Mac_Demo' do
     pod 'SUSHelper_Crawlers', :path => '../'
+    pod 'Async'
 end

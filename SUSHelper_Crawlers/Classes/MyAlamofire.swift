@@ -9,20 +9,24 @@
 import Foundation
 import Alamofire
 
-class MyAlamofire {
+/// Track all requests of Alamofire
+open class MyAlamofire {
     
-    static var shared: SessionManager? = nil
+    open static var shared: SessionManager? = nil
     
-    static var requests: [Request?] = []
+    open static var requests: [Request?] = []
     
-    static func initialize() {
+    /// Call this before all requests
+    open static func initialize() {
         let conf = URLSessionConfiguration.default
         conf.timeoutIntervalForResource = 30
         conf.timeoutIntervalForRequest = 30
         shared = SessionManager(configuration: conf, delegate: SessionDelegate(), serverTrustPolicyManager: nil)
     }
     
-    static func cancelAll() {
+    /// Cancel all requests.
+    /// Call this after a view disappears to prevent bugs.
+    open static func cancelAll() {
         debugPrint("Cancel all requests")
         for request in requests {
             if request != nil {

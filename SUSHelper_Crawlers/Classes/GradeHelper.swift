@@ -10,17 +10,27 @@ import Foundation
 import Alamofire
 import Kanna
 
-let Semester_List_URL = "http://jwxt.sustc.edu.cn/jsxsd/kscj/cjcx_query"
-let Grade_List_URL    = "http://jwxt.sustc.edu.cn/jsxsd/kscj/cjcx_list"
-let Grade_Detail_URL  = "http://jwxt.sustc.edu.cn/jsxsd/kscj/pscj_list.do"
+fileprivate let Semester_List_URL = "http://jwxt.sustc.edu.cn/jsxsd/kscj/cjcx_query"
+fileprivate let Grade_List_URL    = "http://jwxt.sustc.edu.cn/jsxsd/kscj/cjcx_list"
+fileprivate let Grade_Detail_URL  = "http://jwxt.sustc.edu.cn/jsxsd/kscj/pscj_list.do"
 
-class GradeHelper {
+/// Get grades from teaching administration system
+open class GradeHelper {
     
-    static let headers:HTTPHeaders = [
+    /// Custom headers of all requests
+    private static let headers:HTTPHeaders = [
         ://"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
     ]
     
-    public static func getsemesters(_ callback: @escaping ([String]) -> Void) {
+    /// Get all semesters.
+    /// You are always required to login CAS before calling this method.
+    ///
+    /// - Parameter callback: Async callback
+    open static func getsemesters(_ callback: @escaping ([String]) -> Void) {
+        if Demo_Mode {
+            callback(DemoData.semesters)
+            return
+        }
         var html:String? = nil
         let request = MyAlamofire.shared?.request(Semester_List_URL, headers: headers).responseData(completionHandler: { response in
             switch response.result {
@@ -62,7 +72,19 @@ class GradeHelper {
         MyAlamofire.requests.append(request)
     }
     
-    public static func getgrades(_ semester: String, _ callback: @escaping ([String], [Grade]) -> Void) {
+    /// Get all grades of a semester.
+    /// You are always required to login CAS before calling this method.
+    ///
+    /// - Parameters:
+    ///   - semester: Semester
+    ///   - callback: Async callback
+    ///     - param1: Status
+    ///     - param2: Result
+    open static func getgrades(_ semester: String, _ callback: @escaping ([String], [Grade]) -> Void) {
+        if Demo_Mode {
+            callback(["success"], DemoData.grades[semester]!)
+            return
+        }
         var html:String? = nil
         let poststr = "kksj=\(semester)&kcxz=&kcmc=&xsfs=all"
         let request = MyAlamofire.shared?.upload(poststr.data(using: .utf8)!, to: Grade_List_URL, method: .post, headers: headers).responseData { response in
@@ -153,25 +175,49 @@ class GradeHelper {
     
 }
 
-enum GPAType {
+/// Choice of algorithm to calculate GPA
+///
+/// - fivelevel: Five level queried from a table
+/// - hundredscore: score / 20 - 1
+public enum GPAType {
     case fivelevel
     case hundredscore
 }
 
-class Grade {
+/// Store grade of a course
+open class Grade: CustomStringConvertible {
     
-    let semester: String
-    let courseid: String
-    let course: String
-    let grade: Double
-    let credit: Double
-    let level: String
-    let category: String
-    var include = true
+    /// Semester, eg:2016-2017-1
+    open let semester: String
+    open let courseid: String
+    /// Course name
+    open let course: String
+    open let grade: Double
+    open let credit: Double
+    /// ABCDEF level
+    open let level: String
+    /// Required/Optional/etc. course
+    open let category: String
+    /// Include in GPA calculation
+    open var include = true
     
-    var pointer: Any? = nil
+    /// Store any object, eg. TableViewCell which displays this course
+    open var pointer: Any? = nil
     
-    init(semester: String, id: String, course: String, grade: Double, credit: Double, level: String, category: String) {
+    /// Act as the same function of Java toString()
+    public var description: String {
+        return "Semester: \(semester)\n" +
+               "Course ID: \(courseid)\n" +
+               "Course Name: \(course)\n" +
+               "Grade: \(grade)\n" +
+               "Credit: \(credit)\n" +
+               "Level: \(level)\n" +
+               "Category: \(category)\n" +
+               "GPA in five level: \(String(format: ".2f", getGPA(.fivelevel)))\n" +
+               "GPA in hundred score: \(String(format: ".2f", getGPA(.hundredscore)))"
+    }
+    
+    public init(semester: String, id: String, course: String, grade: Double, credit: Double, level: String, category: String) {
         self.semester = semester
         self.courseid = id
         self.course = course
@@ -181,7 +227,11 @@ class Grade {
         self.category = category
     }
     
-    func getGPA(_ type: GPAType) -> Double {
+    /// Return the GPA of this course with the selected algorithm
+    ///
+    /// - Parameter type: Selection of algorithm
+    /// - Returns: GPA value (Pay attention to the
+    open func getGPA(_ type: GPAType) -> Double {
         if type == .fivelevel {
             if grade >= 97 {
                 return 4.00

@@ -7,21 +7,28 @@
 //
 
 import Cocoa
+import SUSHelper_Crawlers
+import Async
 
 class ViewController: NSViewController {
 
+    @IBOutlet var account: NSTextField!
+    @IBOutlet var password: NSSecureTextField!
+    @IBOutlet var funcselect: NSComboBox!
+    
+    @IBOutlet var textview: NSTextView!
+    
+    let grades: [Grade] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //Load Demo Account
+        account.stringValue = "00000000"
+        password.stringValue = "0ava0k"
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+    @IBAction func runpressed(_ sender: Any) {
+        
     }
-
-
+    
 }
-

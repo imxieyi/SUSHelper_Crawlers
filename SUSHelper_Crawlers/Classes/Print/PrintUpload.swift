@@ -9,13 +9,21 @@
 import Foundation
 import Alamofire
 
-class PrintUpload {
+/// Upload a file to Unifound print management system
+open class PrintUpload {
     
     static let headers: HTTPHeaders = [
         ://"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
     ]
     
-    static func upload(_ username: String, _ password: String, _ file: PrintFile, _ callback: @escaping (String, Double) -> Void) {
+    /// Upload a file to Unifound system
+    ///
+    /// - Parameters:
+    ///   - username: Unifound account
+    ///   - password: Unifound password
+    ///   - file: PrintFile to upload
+    ///   - callback: Async callback
+    open static func upload(_ username: String, _ password: String, _ file: PrintFile, _ callback: @escaping (String, Double) -> Void) {
         PrintSession.pms_login(username, password) { ret in
             if ret == "success" {
                 upload_main(file, callback)
@@ -26,6 +34,11 @@ class PrintUpload {
     }
     
     //Reference: https://medium.com/@hanifsgy/alamofire-multipart-with-parameters-upload-image-from-uiimagepickercontroller-swift-a4abada24ae
+    /// Main method of uploading
+    ///
+    /// - Parameters:
+    ///   - file: PrintFile to upload
+    ///   - callback: Async callback
     private static func upload_main(_ file: PrintFile, _ callback: @escaping (String, Double) -> Void) {
         let url = try! URLRequest(url: String(format: pms_upload_file_url_format, pms_session), method: .post, headers: headers)
         MyAlamofire.shared?.upload(multipartFormData: { formdata in
@@ -86,16 +99,24 @@ class PrintUpload {
     
 }
 
-class PrintFile {
+/// Describe a print file to upload
+open class PrintFile {
     
-    let filename: String
-    let paperid: String // A4  A3
-    let color: Int // 0 - BW  1 - CO
-    let double: String // dupnone  dupvertical  duphorizontal
-    let copies: Int
-    let file: Data
+    /// File name.
+    /// It will appear on Unifound print management system query page.
+    open let filename: String
+    /// A4/A3
+    open let paperid: String
+    /// 0 - BW  1 - CO
+    open let color: Int
+    /// dupnone  dupvertical  duphorizontal
+    open let double: String
+    /// How many copied would you want?
+    open let copies: Int
+    /// PDF file content
+    open let file: Data
     
-    init(filename: String, paperid: String, color: Int, double: String, copies: Int, file: Data) {
+    public init(filename: String, paperid: String, color: Int, double: String, copies: Int, file: Data) {
         self.filename = filename
         self.paperid = paperid
         self.color = color
