@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = 'SUSHelper_Crawlers'
-  s.version          = '1.2'
+  s.version          = '1.2.0'
   s.summary          = 'Shared crawler library of SUSHelper App'
 
   s.homepage         = 'https://github.com/imxieyi/SUSHelper_Crawlers'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Xie Yi' => 'wez733@live.cn' }
-  s.source           = { :git => 'https://github.com/imxieyi/SUSHelper_Crawlers.git', :tag => 'v1.2' }
+  s.source           = { :git => 'https://github.com/imxieyi/SUSHelper_Crawlers.git', :tag => 'v1.2.0' }
 
   s.osx.deployment_target = '10.10'
   s.ios.deployment_target = '8.0'
