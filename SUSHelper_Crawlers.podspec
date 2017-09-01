@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/imxieyi/SUSHelper_Crawlers'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Xie Yi' => 'wez733@live.cn' }
-  s.source           = { :git => 'https://github.com/imxieyi/SUSHelper_Crawlers.git', :tag => s.version }
+  s.source           = { :git => 'https://github.com/imxieyi/SUSHelper_Crawlers.git', :tag => 'v1.2' }
 
   s.osx.deployment_target = '10.10'
   s.ios.deployment_target = '8.0'
