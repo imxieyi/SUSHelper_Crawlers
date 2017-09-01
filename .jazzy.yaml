@@ -1,5 +1,7 @@
 podspec: SUSHelper_Crawlers.podspec 
 author: imxieyi
+min_acl: private
+swift_version: 3.0.2
 author_url: http://imxieyi.com/
 github_url: https://github.com/imxieyi/SUSHelper_Crawlers
 module: SUSHelper_Crawlers
