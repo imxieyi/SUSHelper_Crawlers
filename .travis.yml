@@ -11,4 +11,4 @@ language: objective-c
 # - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild -workspace Example/SUSHelper_Crawlers.xcworkspace -scheme SUSHelper_Crawlers_Mac_Demo -sdk macosx10.12 ONLY_ACTIVE_ARCH=NO
-- pod lib lint
+- pod lib lint --verbose
