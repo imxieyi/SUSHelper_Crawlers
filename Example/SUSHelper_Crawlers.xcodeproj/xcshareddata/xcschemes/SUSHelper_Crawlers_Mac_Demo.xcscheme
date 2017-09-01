@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "SUSHelper_Crawlers_Example.app"
-               BlueprintName = "SUSHelper_Crawlers_Example"
-               ReferencedContainer = "container:SUSHelper_Crawlers.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "SUSHelper_Crawlers_Tests.xctest"
-               BlueprintName = "SUSHelper_Crawlers_Tests"
+               BlueprintIdentifier = "8AE2B8161F58013A00BE7ABA"
+               BuildableName = "SUSHelper_Crawlers_Mac_Demo.app"
+               BlueprintName = "SUSHelper_Crawlers_Mac_Demo"
                ReferencedContainer = "container:SUSHelper_Crawlers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "SUSHelper_Crawlers_Tests.xctest"
-               BlueprintName = "SUSHelper_Crawlers_Tests"
-               ReferencedContainer = "container:SUSHelper_Crawlers.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SUSHelper_Crawlers_Example.app"
-            BlueprintName = "SUSHelper_Crawlers_Example"
+            BlueprintIdentifier = "8AE2B8161F58013A00BE7ABA"
+            BuildableName = "SUSHelper_Crawlers_Mac_Demo.app"
+            BlueprintName = "SUSHelper_Crawlers_Mac_Demo"
             ReferencedContainer = "container:SUSHelper_Crawlers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SUSHelper_Crawlers_Example.app"
-            BlueprintName = "SUSHelper_Crawlers_Example"
+            BlueprintIdentifier = "8AE2B8161F58013A00BE7ABA"
+            BuildableName = "SUSHelper_Crawlers_Mac_Demo.app"
+            BlueprintName = "SUSHelper_Crawlers_Mac_Demo"
             ReferencedContainer = "container:SUSHelper_Crawlers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -98,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SUSHelper_Crawlers_Example.app"
-            BlueprintName = "SUSHelper_Crawlers_Example"
+            BlueprintIdentifier = "8AE2B8161F58013A00BE7ABA"
+            BuildableName = "SUSHelper_Crawlers_Mac_Demo.app"
+            BlueprintName = "SUSHelper_Crawlers_Mac_Demo"
             ReferencedContainer = "container:SUSHelper_Crawlers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
