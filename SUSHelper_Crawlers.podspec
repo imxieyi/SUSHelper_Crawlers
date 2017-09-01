@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SUSHelper_Crawlers'
-  s.version          = '1.2.2'
+  s.version          = '1.2.3'
   s.summary          = 'Shared crawler library of SUSHelper App'
 
   s.homepage         = 'https://github.com/imxieyi/SUSHelper_Crawlers'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
-  s.source_files = 'SUSHelper_Crawlers/Classes/**/*'
+  s.source_files = 'SUSHelper_Crawlers/Classes/**/*.swift'
 
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency 'Alamofire'
