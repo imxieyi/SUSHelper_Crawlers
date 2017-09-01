@@ -9,6 +9,10 @@ language: objective-c
 # before_install:
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
+notifications:
+  email:
+    on_success: never
+    on_failure: always
 script:
 - set -o pipefail && xcodebuild -workspace Example/SUSHelper_Crawlers.xcworkspace -scheme SUSHelper_Crawlers_Mac_Demo -sdk macosx10.12 ONLY_ACTIVE_ARCH=NO
 - pod lib lint --verbose

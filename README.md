@@ -18,7 +18,7 @@
 
 ## Example
 
-Current there is only a MacOS demo.
+Current there is only a macOS demo.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
