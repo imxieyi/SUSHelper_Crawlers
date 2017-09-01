@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SUSHelper_Crawlers'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'Shared crawler library of SUSHelper App'
 
   s.homepage         = 'https://github.com/imxieyi/SUSHelper_Crawlers'
