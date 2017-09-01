@@ -9,6 +9,9 @@ language: objective-c
 # before_install:
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
+branches:
+  only:
+  - master
 notifications:
   email:
     on_success: never
