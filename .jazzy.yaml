@@ -1,2 +1,8 @@
-clean: true
-podspec: SUSHelper_Crawlers.podspec
+podspec: SUSHelper_Crawlers.podspec 
+author: imxieyi
+author_url: http://imxieyi.com/
+github_url: https://github.com/imxieyi/SUSHelper_Crawlers
+module: SUSHelper_Crawlers
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'SUSHelper_Crawlers.xcworkspace', -scheme, 'SUSHelper_Crawlers']
