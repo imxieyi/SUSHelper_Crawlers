@@ -5,6 +5,10 @@
 [![Version](https://img.shields.io/cocoapods/v/SUSHelper_Crawlers.svg?style=flat)](http://cocoapods.org/pods/SUSHelper_Crawlers)
 [![License](https://img.shields.io/cocoapods/l/SUSHelper_Crawlers.svg?style=flat)](http://cocoapods.org/pods/SUSHelper_Crawlers)
 [![Platform](https://img.shields.io/cocoapods/p/SUSHelper_Crawlers.svg?style=flat)](http://cocoapods.org/pods/SUSHelper_Crawlers)
+[![Documentation](https://img.shields.io/cocoapods/metrics/doc-percent/SUSHelper_Crawlers.svg)](http://cocoadocs.org/docsets/SUSHelper_Crawlers/)
+
+Shared crawlers library for SUSHelper App.
+See [Documentation](http://cocoadocs.org/docsets/SUSHelper_Crawlers/).
 
 ## Features
 
