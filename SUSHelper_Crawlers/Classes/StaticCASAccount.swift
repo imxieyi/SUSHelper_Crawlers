@@ -14,6 +14,11 @@ open class StaticCASAccount {
     open var stuid = ""
     open var password = ""
     
+    public init(_ stuid: String, _ password: String) {
+        self.stuid = stuid
+        self.password = password
+    }
+    
     /// Login CAS
     ///
     /// - Parameter callback: Async callback

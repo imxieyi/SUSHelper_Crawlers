@@ -213,8 +213,8 @@ open class Grade: CustomStringConvertible {
                "Credit: \(credit)\n" +
                "Level: \(level)\n" +
                "Category: \(category)\n" +
-               "GPA in five level: \(String(format: ".2f", getGPA(.fivelevel)))\n" +
-               "GPA in hundred score: \(String(format: ".2f", getGPA(.hundredscore)))"
+               "GPA in five level: \(String(format: "%.2f", getGPA(.fivelevel)))\n" +
+               "GPA in hundred score: \(String(format: "%.2f", getGPA(.hundredscore)))"
     }
     
     public init(semester: String, id: String, course: String, grade: Double, credit: Double, level: String, category: String) {

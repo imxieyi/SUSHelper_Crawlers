@@ -151,18 +151,18 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="minSize" width="851" height="451"/>
-                                            <size key="maxSize" width="851" height="10000000"/>
+                                            <size key="maxSize" width="853" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="d4T-fe-UO7">
-                                    <rect key="frame" x="1" y="437" width="836" height="15"/>
+                                    <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="nIm-jr-aGe">
-                                    <rect key="frame" x="837" y="1" width="15" height="436"/>
+                                    <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -181,6 +181,7 @@
                     </view>
                     <connections>
                         <outlet property="account" destination="Cek-FX-KNW" id="T8U-Uu-Ef9"/>
+                        <outlet property="button" destination="uf2-1l-UJA" id="S0H-2W-F2k"/>
                         <outlet property="funcselect" destination="nug-LB-IJ0" id="WJh-vN-4I1"/>
                         <outlet property="password" destination="Lgk-j0-d8v" id="3Nb-DJ-Yhq"/>
                         <outlet property="textview" destination="GD6-st-TC2" id="oA8-y0-0fv"/>
