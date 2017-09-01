@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SUSHelper_Crawlers'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SUSHelper_Crawlers.'
+  s.version          = '1.2'
+  s.summary          = 'Shared crawler library of SUSHelper App'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This is the shared crawler library of SUSHelper App.
+It includes code for simulation of CAS login, getting grades and Unifound PMS helpers.
                        DESC
 
-  s.homepage         = 'https://github.com/Xie Yi/SUSHelper_Crawlers'
+  s.homepage         = 'https://github.com/imxieyi/SUSHelper_Crawlers'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Xie Yi' => 'wez733@live.cn' }
-  s.source           = { :git => 'https://github.com/Xie Yi/SUSHelper_Crawlers.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/imxieyi/SUSHelper_Crawlers.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.osx.deployment_target = '10.10'
