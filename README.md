@@ -22,7 +22,7 @@ See [Documentation](http://cocoadocs.org/docsets/SUSHelper_Crawlers/).
 
 ## Example
 
-Current there is only a macOS demo.
+Currently there is only a macOS demo. It only includes a grade query example.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
