@@ -19,6 +19,7 @@ See [Documentation](http://cocoadocs.org/docsets/SUSHelper_Crawlers/).
 - [x] Get print job list from PMS
 - [x] Upload PDF file to PMS
 - [x] Delete print job from PMS
+- [x] Generating print file preview on PMS
 
 ## Example
 
