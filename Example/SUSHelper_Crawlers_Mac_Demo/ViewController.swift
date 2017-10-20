@@ -46,15 +46,15 @@ class ViewController: NSViewController {
             Async.main {
                 switch stat {
                 case "out":
-                    (self.textview.string)! += result + "\n"
+                    (self.textview.string) += result + "\n"
                     self.textview.scrollToEndOfDocument(self.textview)
                 case "success":
                     self.button.isEnabled = true
-                    (self.textview.string)! += "Finished!"
+                    (self.textview.string) += "Finished!"
                     self.textview.scrollToEndOfDocument(self.textview)
                 case "error":
                     self.button.isEnabled = true
-                    (self.textview.string)! += "Error: " + result + "\n"
+                    (self.textview.string) += "Error: " + result + "\n"
                     self.textview.scrollToEndOfDocument(self.textview)
                 default:
                     //Should never reach here

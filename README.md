@@ -1,7 +1,7 @@
 # SUSHelper_Crawlers
 
 [![CI Status](http://img.shields.io/travis/imxieyi/SUSHelper_Crawlers.svg?style=flat)](https://travis-ci.org/imxieyi/SUSHelper_Crawlers)
-[![Swift Version](http://img.shields.io/badge/Swift-3.1-blue.svg)](https://swift.org/)
+[![Swift Version](http://img.shields.io/badge/Swift-4.0-blue.svg)](https://swift.org/)
 [![Version](https://img.shields.io/cocoapods/v/SUSHelper_Crawlers.svg?style=flat)](http://cocoapods.org/pods/SUSHelper_Crawlers)
 [![License](https://img.shields.io/cocoapods/l/SUSHelper_Crawlers.svg?style=flat)](http://cocoapods.org/pods/SUSHelper_Crawlers)
 [![Platform](https://img.shields.io/cocoapods/p/SUSHelper_Crawlers.svg?style=flat)](http://cocoapods.org/pods/SUSHelper_Crawlers)

@@ -35,7 +35,7 @@ extension String {
     func subStringBefore(_ what: String) -> String {
         if let range = self.range(of: what) {
             let firstPart = self[self.startIndex..<range.lowerBound]
-            return firstPart
+            return String(firstPart)
         } else {
             return self
         }
@@ -48,7 +48,7 @@ extension String {
     func subStringAfter(_ what: String) -> String {
         if let range = self.range(of: what) {
             let lastPart = self[range.upperBound..<self.endIndex]
-            return lastPart
+            return String(lastPart)
         } else {
             return self
         }
