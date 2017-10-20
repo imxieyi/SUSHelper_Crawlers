@@ -86,14 +86,9 @@ open class CASSession {
                     return
                 }
                 let doc = HTML(html: cas_html!, encoding: .utf8)
-                let lt = doc?.xpath("//input[@name=\"lt\"]").first?["value"]
                 let execution = doc?.xpath("//input[@name=\"execution\"]").first?["value"]
                 let _eventId = doc?.xpath("//input[@name=\"_eventId\"]").first?["value"]
                 let submit = doc?.xpath("//input[@name=\"submit\"]").first?["value"]
-                guard lt != nil else {
-                    callback("lt is empty!")
-                    return
-                }
                 guard execution != nil else {
                     callback("execution is empty!")
                     return
@@ -106,7 +101,7 @@ open class CASSession {
                     callback("submit is empty!")
                     return
                 }
-                self.auth_cas(lt!, execution!, _eventId!, submit!, callback)
+                self.auth_cas(execution!, _eventId!, submit!, callback)
                 break
             case .failure(let error):
                 debugPrint(error)
@@ -124,8 +119,8 @@ open class CASSession {
     ///   - _eventId: Ask developer of CAS system.
     ///   - submit: Ask developer of CAS system.
     ///   - callback: Async callback
-    private func auth_cas(_ lt:String, _ execution:String, _ _eventId:String, _ submit:String, _ callback: @escaping (String) -> Void) {
-        let poststr = "username=\(stuid)&password=\(password)&lt=\(lt)&execution=\(execution)&_eventId=\(_eventId)&submit=%E7%99%BB%E5%BD%95"
+    private func auth_cas(_ execution:String, _ _eventId:String, _ submit:String, _ callback: @escaping (String) -> Void) {
+        let poststr = "username=\(stuid)&password=\(password)&execution=\(execution)&_eventId=\(_eventId)&submit=%E7%99%BB%E5%BD%95"
         let request = MyAlamofire.shared?.upload(poststr.data(using: .utf8)!, to: cas_url, method: .post, headers: headers).responseString(completionHandler: {response in
             switch response.result {
             case .success:
